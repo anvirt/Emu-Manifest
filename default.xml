@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- 清华镜像，https://mirror.tuna.tsinghua.edu.cn/help/AOSP/ -->
+  <remote name="tuna" fetch="https://aosp.tuna.tsinghua.edu.cn" />
+
+  <include name="default.origin.xml" />
+
+  <!-- 默认使用清华镜像 -->
+  <!-- 基于emu-master-dev构建 -->
+  <default revision="emu-master-dev" remote="tuna" sync-c="true" sync-j="4" />
+
+  <!-- all custom repos of anvirt -->
+  <include name="anvirt.xml" />
+
+</manifest>
